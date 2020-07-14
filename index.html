@@ -1,6 +1,7 @@
 <!doctype html>
 <html lang="en">
     <head>
+        <link rel="stylesheet" href="css/style.css" type="text/css">
         <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
         <link rel="stylesheet" href="css/bootstrap-grid.min.css" type="text/css">
         <link rel="stylesheet" href="css/bootstrap-reboot.min.css" type="text/css">
@@ -18,24 +19,22 @@
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item active">
-                    <a class="nav-link" href="index.html">Home
+                    <a class="nav-link" href="#">Home
                         <span class="sr-only">(current)</span>
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="library.html">About</a>
+                    <a class="nav-link" href="#about">About</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="uploads.html">Projects</a>
+                    <a class="nav-link" href="#">Projects</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="about.html">Contact</a>
+                    <a class="nav-link" href="javascript: scrollTo('#help);">Contact</a>
                 </li>
             </ul>
         </div>
     </nav>
-
-
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
@@ -43,9 +42,12 @@
     <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
     <script src="main.js"></script>
     <script>
+        $(document).ready(function(){$("a").on('click', function(event) {if (this.hash !== "") {event.preventDefault();var hash = this.hash;$('html, body').animate({
+         scrollTop: $(hash).offset().top}, 1800, function(){window.location.hash = hash;});}});});
+    </script>
+    <script>
         $(document).ready(function() {
             $( ".mr-auto .nav-item" ).bind( "click", function(event) {
-                event.preventDefault();
                 var clickedItem = $( this );
                 $( ".mr-auto .nav-item" ).each( function() {
                     $( this ).removeClass( "active" );
@@ -54,5 +56,18 @@
             });
         });
     </script>
+
+    <div>
+        <h1 style="font-size:500px;">Test</h1>
+    </div>
+    <div>
+        <h1 style="font-size:500px;">Test</h1>
+    </div>
+    <div>
+        <h1 style="font-size:500px;">Test</h1>
+    </div>
+    <div id="about">
+        <h1 style="font-size:500px;">Test</h1>
+    </div>
 </body>
 </html>
