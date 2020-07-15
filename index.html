@@ -10,64 +10,70 @@
         <script src="js/bootstrap-transition.js"></script>
     </head>
     <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <a class="navbar-brand" href="index.html" id="movielogo">Daniel Wei</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
+        <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand" href="index.html">Daniel Wei</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
-                    <a class="nav-link" href="#">Home
-                        <span class="sr-only">(current)</span>
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#about">About</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Projects</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="javascript: scrollTo('#help);">Contact</a>
-                </li>
-            </ul>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto text-uppercase">
+                    <li class="nav-item active">
+                        <a class="nav-link smoothScroll" href="#home">Home<span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link smoothScroll" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link smoothScroll" href="#projects">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link smoothScroll" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <div id="home" class="text-center vh-100 font-weight-normal text-light">
+            <div style="margin: auto;">
+                <h1>Daniel Wei</h1>
+                <h2>Aspiring Software Engineer</h2>
+            </div>
         </div>
-    </nav>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
-    <script src="main.js"></script>
-    <script>
-        $(document).ready(function(){$("a").on('click', function(event) {if (this.hash !== "") {event.preventDefault();var hash = this.hash;$('html, body').animate({
-         scrollTop: $(hash).offset().top}, 1800, function(){window.location.hash = hash;});}});});
-    </script>
-    <script>
-        $(document).ready(function() {
-            $( ".mr-auto .nav-item" ).bind( "click", function(event) {
-                var clickedItem = $( this );
-                $( ".mr-auto .nav-item" ).each( function() {
-                    $( this ).removeClass( "active" );
-                });
-                clickedItem.addClass( "active" );
+        <div id="about" class="vh-100 font-weight-normal text-uppercase">
+            <h1>About Me</h1>
+            <div>
+                Hello
+            </div>
+
+        </div>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+        <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+        <script src="main.js"></script>
+
+        <script>
+            $('a.smoothScroll').on('click', function (e) {
+                var anchor = $(this);
+                $('html, body').stop().animate({
+                    scrollTop: $(anchor.attr('href')).offset().top - 50
+                }, 1500);
+                e.preventDefault();
             });
-        });
-    </script>
-
-    <div>
-        <h1 style="font-size:500px;">Test</h1>
-    </div>
-    <div>
-        <h1 style="font-size:500px;">Test</h1>
-    </div>
-    <div>
-        <h1 style="font-size:500px;">Test</h1>
-    </div>
-    <div id="about">
-        <h1 style="font-size:500px;">Test</h1>
-    </div>
-</body>
+        </script>
+        <script>
+            $(document).ready(function() {
+                $( ".ml-auto .nav-item" ).bind( "click", function(event) {
+                    var clickedItem = $( this );
+                    $( ".ml-auto .nav-item" ).each( function() {
+                        $( this ).removeClass( "active" );
+                    });
+                    clickedItem.addClass( "active" );
+                });
+            });
+        </script>
+    </body>
 </html>
