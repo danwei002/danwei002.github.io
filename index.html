@@ -41,12 +41,21 @@
             </div>
         </div>
 
-        <div id="about" class="vh-100 font-weight-normal text-uppercase">
+        <div id="about" class="vh-100 font-weight-normal text-uppercase text-light">
             <h1>About Me</h1>
-            <div>
+            <br>
+            <button id="button1" type="button" class="btn btn-primary btn-circle btn-xl" style="position: absolute; left: 15.5%;">1</button>
+            <button id="button2" type="button" class="btn btn-primary btn-circle btn-xl" style="position: absolute; left: 48.5%">2</button>
+            <button id="button3" type="button" class="btn btn-primary btn-circle btn-xl" style="position: absolute; left: 81.5%">3</button>
+            <div id="about1" style="left: 5%; margin-top: 6%;">
                 Hello
             </div>
-
+            <div id="about2" style="left: 38%; margin-top: 6%;">
+                Hello
+            </div>
+            <div id="about3" style="left: 71%; margin-top: 6%;">
+                Hello
+            </div>
         </div>
 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -62,6 +71,24 @@
                     scrollTop: $(anchor.attr('href')).offset().top - 50
                 }, 1500);
                 e.preventDefault();
+            });
+
+            $(function(){
+                $('#button1').on('click',function(){
+                    $('#about1').addClass('animate');
+                });
+            });
+
+            $(function(){
+                $('#button2').on('click',function(){
+                    $('#about2').addClass('animate');
+                });
+            });
+
+            $(function(){
+                $('#button3').on('click',function(){
+                    $('#about3').addClass('animate');
+                });
             });
         </script>
         <script>
