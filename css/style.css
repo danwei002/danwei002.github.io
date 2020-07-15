@@ -1,15 +1,18 @@
 body {
-    padding-top: 54px;
+    position: relative;
 }
 
+#navbar-scrollspy {}
+
 #home {
+    position: relative;
     width = 100vw;
     height = 100vh;
     display: flex;
     background-size: cover;
     background-repeat: no-repeat;
     background-origin: center;
-    background-image: url('https://i.imgur.com/BIDxJFQ.jpg');
+    background-image: url('../images/home.jpg');
 }
 
 #home h1 {
@@ -22,12 +25,14 @@ body {
 }
 
 #about {
+    padding-top: 54px;
+    position: relative;
     width = 100vw;
     height = 100vh;
     background-size: cover;
     background-repeat: no-repeat;
     background-origin: center;
-    background-image: url('https://i.imgur.com/SRCJMIf.jpg');
+    background-image: url('../images/about.jpg');
 }
 
 #about button {
@@ -55,7 +60,7 @@ body {
     background-image: linear-gradient(#faddbb, #ffd4a1);
     text-align: center;
     vertical-align: middle;
-    height: 70%;
+    height: 60%;
     width: 24%
 }
 
@@ -64,23 +69,74 @@ body {
     animation: anim 3s forwards;
 }
 
+@keyframes arrowAnim {
+  0% {
+    transform: translateY(-20%);
+  }
+
+  50% {
+    transform: translateY(20%);
+  }
+
+  100% {
+    transform: translateY(-20%);
+  }
+}
+
+.arrowAnimate {
+    position: absolute;
+    animation: arrowAnim 1s ease infinite;
+
+}
+
 @keyframes anim {
     0% {opacity: 0;}
-    10% {opacity: 0.1;}
-    20% {opacity: 0.2;}
-    30% {opacity: 0.3;}
-    40% {opacity: 0.4;}
-    50% {opacity: 0.5;}
-    60% {opacity: 0.6;}
-    70% {opacity: 0.7;}
-    80% {opacity: 0.8;}
-    90% {opacity: 0.9;}
     100% {opacity: 1;}
 }
 
 #about1 {}
+
+#about1 img {
+    border-radius: 50%;
+    border-width: 10px;
+    border-color: #403e4f;
+    border-style: solid;
+    width: 9vw;
+    height: 9vw;
+}
+
+#about1 h1 {
+    padding-left: 5%;
+    padding-right: 5%;
+    color: #403e4f;
+    font: 30px Lucida Sans Unicode, sans-serif;
+}
+
+#about h3 {
+    padding-left: 10%;
+    padding-right: 10%;
+    color: #403e4f;
+    font: 18px Lucida Sans Unicode, sans-serif;
+}
+
 #button1 {}
+
 #about2 {}
+
+#about2 h1 {
+    padding-left: 5%;
+    padding-right: 5%;
+    color: #403e4f;
+    font: 30px Lucida Sans Unicode, sans-serif;
+}
+
+#about2 h4 {
+    padding-left: 10%;
+    padding-right: 10%;
+    color: #403e4f;
+    font: 16px Lucida Sans Unicode, sans-serif;
+}
+
 #button2 {}
 #about3 {}
 #button3 {}
