@@ -39,10 +39,21 @@ body {
     width=1%;
 }
 
+#about section {
+    position: absolute;
+    top: 30%;
+    left: 0px;
+    opacity: 0;
+    width: 100%;
+    height: 70vh;
+    margin: 0 auto;
+}
+
 #about h1 {
     font-size: 48px;
-    padding: 24px;
+    padding: 30px;
     text-align: center;
+    margin: 0 auto;
 }
 
 #about h2 {
@@ -64,10 +75,24 @@ body {
     height: 65vh;
 }
 
+@keyframes anim {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+@keyframes revAnim {
+    0% {opacity: 1;}
+    100% {opacity: 0;}
+}
 
 .animate {
-    -webkit-animation: bubble 3s forwards;
+    -webkit-animation: anim 3s forwards;
     animation: anim 3s forwards;
+}
+
+.revAnimate {
+    -webkit-animation: revAnim 1s forwards;
+    animation: revAnim 1s forwards;
 }
 
 @keyframes arrowAnim {
@@ -87,37 +112,31 @@ body {
 .arrowAnimate {
     position: absolute;
     animation: arrowAnim 1s ease infinite;
-
-}
-
-@keyframes anim {
-    0% {opacity: 0;}
-    100% {opacity: 1;}
 }
 
 #about1 {}
 
 #about1 img {
-    border-radius: 50%;
-    border-width: 10px;
+    border-radius: 40%;
+    border-width: 0.4vw;
     border-color: #403e4f;
     border-style: solid;
-    width: 9vw;
-    height: 9vw;
+    width: 12vw;
+    height: 12vw;
 }
 
 #about1 h1 {
-    padding-left: 5%;
-    padding-right: 5%;
-    color: #403e4f;
-    font: 30px Lucida Sans Unicode, sans-serif;
+    padding-left: 15%;
+    padding-right: 15%;
+    color: #cde1fa;
+    font: 24px Lucida Sans Unicode, sans-serif;
 }
 
 #about h3 {
     padding-left: 10%;
     padding-right: 10%;
-    color: #403e4f;
-    font: 18px Lucida Sans Unicode, sans-serif;
+    color: #cde1fa;
+    font: 24px Lucida Sans Unicode, sans-serif;
 }
 
 #button1 {}

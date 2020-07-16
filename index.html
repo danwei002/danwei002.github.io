@@ -53,43 +53,37 @@
         </div>
 
         <div id="about" class="vh-100 text-light text-center">
-            <h1>ABOUT ME</h1>
+            <h1 style="color: white;">About Me</h1>
 
-            <br>
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-sm-4 d-flex justify-content-center coldiv">
                         <button id="button1" type="button" class="btn btn-primary btn-circle btn-xl"><i class="fas fa-info"></i></button>
-                        <br>
-                        <div id="about1" style="margin-top: 20%;">
-                            <img src="images/profilePic.jpg" style="margin-top: 5%;">
-                            <h1>Hi! My name is Daniel Wei</h1>
-                            <a href="https://uwaterloo.ca/future-students/programs/software-engineering"><img src="images/looLogo.png" style="width: 3.33vw; height: 3.86vw; border-radius: 0%; border-style: none;"></a>
-                            <br>
-                            <br>
-                            <h3>
-                                I'm an avid programmer and an incoming 1A Software Engineering student at the University of Waterloo. I love computers and programming as I
-                                believe they are the keys to innovation and evolution. I hope to one day have a career working with them.
-                            </h3>
-                        </div>
                     </div>
 
                     <div class="col-sm-4 d-flex justify-content-center coldiv">
                         <button id="button2" type="button" class="btn btn-primary btn-circle btn-xl"><i class="fas fa-cogs"></i></button>
-                        <div id="about2" style="margin-top: 20%;">
-                            <h1>My Skills and Interests</h1>
-                            <h4>Most of my skills and interests revolve around the STEM field, primarily with computers. </h4>
-                        </div>
                     </div>
 
                     <div class="col-sm-4 d-flex justify-content-center coldiv">
                         <button id="button3" type="button" class="btn btn-primary btn-circle btn-xl">3</button>
-                        <div id="about3" style="margin-top: 20%;">
-                            <h1>Hello</h1>
-                        </div>
                     </div>
                 </div>
             </div>
+
+            <section id="about1">
+                <img src="images/profilePic.jpg">
+                <h1>
+                    Hi! My name's Daniel, and I'm an avid programmer and computer fanatic. I consider myself a dedicated problem-solver and lifelong learner,
+                    always looking for new ways to solve problems and learning while doing so. I am driven by my desire to contribute to humanity, primarily through the world
+                    of technology. I believe that the world has barely scratched the surface of computers, and with a career in technology, I can help untap it. For this reason,
+                    I am going to be attending the University of Waterloo's Software Engineering program this fall.
+                </h1>
+                <a href="https://uwaterloo.ca/future-students/programs/software-engineering"><img src="images/looLogo.png" style="width: 3.33vw; height: 3.86vw; border-radius: 0%; border-style: none;"></a>
+            </section>
+            <section id="about2">
+                adwdw
+            </section>
         </div>
 
         <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
@@ -109,19 +103,60 @@
         <script>
             $(function(){
                 $('#button1').on('click',function(){
+                    $('#about1').removeClass('revAnimate');
                     $('#about1').addClass('animate');
+                    $('#about1').css('z-index', 11);
+                    $('#about2').css('z-index', 1);
+                    $('#about3').css('z-index', 2);
+                    if($('#about2').css('opacity') > 0) {
+                        $('#about2').removeClass('animate');
+                        $('#about2').addClass('revAnimate');
+                    }
+
+                    if($('#about3').css('opacity') > 0) {
+                        $('#about3').removeClass('animate');
+                        $('#about3').addClass('revAnimate');
+                    }
                 });
             });
 
             $(function(){
                 $('#button2').on('click',function(){
+                    $('#about2').removeClass('revAnimate');
                     $('#about2').addClass('animate');
+                    $('#about1').css('z-index', 1);
+                    $('#about2').css('z-index', 11);
+                    $('#about3').css('z-index', 2);
+
+                    if($('#about1').css('opacity') > 0) {
+                        $('#about1').removeClass('animate');
+                        $('#about1').addClass('revAnimate');
+                    }
+
+                    if($('#about3').css('opacity') > 0) {
+                        $('#about3').removeClass('animate');
+                        $('#about3').addClass('revAnimate');
+                    }
                 });
             });
 
             $(function(){
                 $('#button3').on('click',function(){
+                    $('#about3').removeClass('revAnimate');
                     $('#about3').addClass('animate');
+                    $('#about1').css('z-index', 1);
+                    $('#about2').css('z-index', 2);
+                    $('#about3').css('z-index', 11);
+
+                    if($('#about2').css('opacity') > 0) {
+                        $('#about2').removeClass('animate');
+                        $('#about2').addClass('revAnimate');
+                    }
+
+                    if($('#about1').css('opacity') > 0) {
+                        $('#about1').removeClass('animate');
+                        $('#about1').addClass('revAnimate');
+                    }
                 });
             });
         </script>
