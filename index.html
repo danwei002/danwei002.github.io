@@ -168,27 +168,27 @@
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-md-4 col-sm-6 col-12">
-                        <button type="button" id="cardsBotBtn" class="btn btnHoverAnim btn-info" data-toggle="modal" data-target="#cardsBotInfo">
+                        <a type="button" id="cardsBotBtn" class="btn btnHoverAnim btn-info" data-toggle="modal" data-target="#cardsBotInfo">
                             <div class="projButton">
                                 <img src="images/cardsBot.png">
                                 <div class="overlay">
                                     <p class="overlayTxt" style="font-family: Roboto Sans Pro, sans-serif;">Discord Playing Cards Bot</p>
                                 </div>
                             </div>
-                        </button>
+                        </a>
 
                         <!-- Modal -->
                         <div class="modal fade" id="cardsBotInfo" tabindex="-1" role="dialog" aria-hidden="true">
-                            <div class="modal-dialog modal-xl modal-dialog-centered" role="document">
+                            <div class="modal-dialog modal-xl modal-dialog-centered modalAnimation" role="document">
                                 <div class="modal-content">
                                     <div class="modal-header">
-                                        <h5 class="modal-title" style="color:black;">Discord Playing Cards Bot</h5>
+                                        <h5 class="modal-title" style="color:black;">Cards Bot</h5>
                                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                             <span aria-hidden="true">&times;</span>
                                         </button>
                                     </div>
                                     <div class="modal-body">
-                                        <h1 style="color: black; text-align: left;">A discord bot</h1>
+                                        <p class="lead" style="color: black; text-align: left;">A discord bot</p>
                                     </div>
                                     <div class="modal-footer">
                                         <a href="https://github.com/danwei002/Cards-Bot" class="effect2"><i class="fab fa-github fa-1x"></i> GitHub Repository</a>
@@ -198,18 +198,18 @@
                         </div>
                     </div>
                     <div class="col-md-4 col-sm-6 col-12">
-                        <button type="button" id="battleshipBtn" class="btn btnHoverAnim btn-info" data-toggle="modal" data-target="#battleshipInfo">
+                        <a type="button" id="battleshipBtn" class="btn btnHoverAnim btn-info" data-toggle="modal" data-target="#battleshipInfo">
                             <div class="projButton">
                                 <img src="images/battleship.png">
                                 <div class="overlay">
                                     <p class="overlayTxt" style="font-family: Roboto Sans Pro, sans-serif;">Battleship Inspired Game</p>
                                 </div>
                             </div>
-                        </button>
+                        </a>
 
                         <!-- Modal -->
-                        <div class="modal fade" id="battleshipInfo" tabindex="-1" role="dialog" aria-hidden="true">
-                            <div class="modal-dialog modal-xl modal-dialog-centered" role="document">
+                        <div class="modal fade" id="battleshipInfo" tabindex="-1" role="dialog" aria-hidden="false">
+                            <div class="modal-dialog modal-xl modal-dialog-centered modalAnimation" role="document">
                                 <div class="modal-content">
                                     <div class="modal-header">
                                         <h5 class="modal-title" style="color:black;">Grid-Based, Battleship-Inspired Game</h5>
@@ -228,18 +228,18 @@
                         </div>
                     </div>
                     <div class="col-md-4 col-sm-6 col-12">
-                        <button type="button" id="platformerBtn" class="btn btnHoverAnim btn-info" data-toggle="modal" data-target="#platformerInfo">
+                        <a type="button" id="platformerBtn" class="btn btnHoverAnim btn-info" data-toggle="modal" data-target="#platformerInfo">
                             <div class="projButton">
-                                <img src="images/platformer.png">
+                                <img src="images/platformerDemo.gif">
                                 <div class="overlay">
                                     <p class="overlayTxt" style="font-family: Roboto Sans Pro, sans-serif;">Not Mario Bros - Platformer Game</p>
                                 </div>
                             </div>
-                        </button>
+                        </a>
 
                         <!-- Modal -->
                         <div class="modal fade" id="platformerInfo" tabindex="-1" role="dialog" aria-labelledby="yeet" aria-hidden="true">
-                            <div class="modal-dialog modal-xl modal-dialog-centered" role="document">
+                            <div class="modal-dialog modal-xl modal-dialog-centered modalAnimation" role="document">
                                 <div class="modal-content">
                                     <div class="modal-header">
                                         <h5 class="modal-title" style="color:black;">Not Mario Bros</h5>
@@ -248,7 +248,27 @@
                                         </button>
                                     </div>
                                     <div class="modal-body">
-                                        <h1 style="color: black; text-align: left;">Mario</h1>
+                                        <div class="container-fluid">
+                                            <div class="row">
+                                                <div class="col-md-8">
+                                                    <p class="lead" style="color: black; text-align: left; line-height: 150% !important;">
+                                                        A game inspired by Nintendo's Mario Bros that I created as the final project for my Grade 11 Computer Science course.
+                                                        The game is written in Java using the <a href="https://www.greenfoot.org/door" class="effect2">Greenfoot</a> IDE. It includes
+                                                        a self-created game engine that handles movement and collision (such as gravity and preventing clipping out of bounds).
+                                                        It is a non-scrolling platformer game consisting of six unique levels designed by myself.
+                                                        <br>
+                                                        <br>
+                                                        Game Objective: navigate Mario to the flag, which may or may not be initially hidden
+                                                        <br>
+                                                        <br>
+                                                        Controls: left and right arrow keys to move, hold shift to sprint, spacebar to jump
+                                                    </p>
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <img src="images/platformerDemo.gif" style="width: 12vw; height: 16vw;">
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
                                     <div class="modal-footer">
                                         <a href="https://github.com/danwei002/My-Platformer-Game" class="effect2"><i class="fab fa-github fa-1x"></i> GitHub Repository</a>
