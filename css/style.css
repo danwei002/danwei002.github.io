@@ -53,18 +53,19 @@ body {
 
 #about section {
     position: absolute;
-    top: 27vh;
-    left: 10vw;
+    top: 27%;
+    left: 10%;
     opacity: 0;
-    width: 80vw;
-    height: 70vh;
+    width: 80%;
+    height: 70%;
     margin: 0 auto;
     background-color: rgba(0, 0, 0, 0.35);
 }
 
 #about h1 {
     font: 48px Trebuchet MS, Helvetica, sans-serif;
-    padding: 30px;
+    padding-top: 30px;
+    padding-bottom: 30px;
     text-align: center;
     margin: 0 auto;
 }
@@ -134,29 +135,40 @@ body {
     margin-left: 7.5%;
     margin-right: 5%;
     margin-top: 5%;
-    border-radius: 20%;
     border-width: 0.4vw;
     border-color: #403e4f;
     border-style: solid;
-    width: 24vw;
-    height: 24vw;
+    width: 18vw;
+    height: 30vw;
 }
 
 #about1 h1 {
-    margin-top: 3%;
     color: #cde1fa;
-    font: 48px Trebuchet MS, Helvetica, sans-serif;
+    font: 36px Trebuchet MS, Helvetica, sans-serif;
     text-align: left;
-    margin-left: 35%;
+    margin-top: 3%;
+    margin-right: 15%;
+    margin-left: 15%;
 }
 
 #about1 h3 {
+    line-height: 150%;
     text-align: left;
-    margin-right: 5%;
-    margin-left: 5%;
-    margin-bottom: 5%;
+    margin-right: 15%;
+    margin-left: 15%;
     color: #cde1fa;
-    font: 24px Trebuchet MS, Helvetica, sans-serif;
+}
+
+#about1 a, a > span {
+    color: #7df1f5;
+    position: relative;
+    text-decoration: none;
+
+}
+#about1 a:before, a:after, a > span:before, a > span:after {
+    content: '';
+    position: absolute;
+    transition: transform .8s ease;
 }
 
 #button1 {}
@@ -176,10 +188,11 @@ body {
 }
 
 #about2 h3 {
+    line-height: 150% !important;
     margin-left: 5%;
     margin-right: 5%;
     color: #cde1fa;
-    font: 18px Trebuchet MS, Helvetica, sans-serif;
+    font-size: 18px;
     text-align: center;
 }
 
@@ -219,10 +232,11 @@ body {
     text-decoration: none;
 
 }
+
 #about2 a:before, a:after, a > span:before, a > span:after {
     content: '';
     position: absolute;
-    transition: transform .8s ease;
+    transition: transform .6s ease;
 }
 
 .effect1 {
