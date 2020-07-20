@@ -203,15 +203,16 @@
                                                         <br>
                                                         <br>
                                                         Some examples of commands (full list available under command 'c!help'):
-                                                        <ul class="lead" style="color: black; text-align: left; line-height: 150% !important;">
-                                                            <li>c!bal: Check user balance</li>
-                                                            <li>c!hand: Check the cards in your hand</li>
-                                                            <li>c!game: Start a card game in the channel this command was sent</li>
-                                                            <li>c!next: Deal the next community card in Texas Hold 'Em</li>
-                                                            <li>c!play: Play cards by their displayed index in a game of President</li>
-                                                        </ul>
+
                                                         <br>
                                                     </p>
+                                                    <ul class="lead" style="color: black; text-align: left; line-height: 150% !important;">
+                                                        <li>c!bal: Check user balance</li>
+                                                        <li>c!hand: Check the cards in your hand</li>
+                                                        <li>c!game: Start a card game in the channel this command was sent</li>
+                                                        <li>c!next: Deal the next community card in Texas Hold 'Em</li>
+                                                        <li>c!play: Play cards by their displayed index in a game of President</li>
+                                                    </ul>
                                                 </div>
                                                 <div class="col-md-4 col-sm-12">
                                                     <img src="images/cardsBotDemo.png" style="width: 12vw; height: 12vw; margin-bottom: 2%; float: right; border-width: 1%; border-color: #c3d3e6; border-style: solid;">
@@ -260,12 +261,12 @@
                                                         In this version of Battleship, there are three types of ships. One is a Submarine, which can be toggled between submerged or not.
                                                         Submerged submarines cannot be damaged by standard missiles, but are vulnerable to underwater torpedoes. Unsubmerged submarines are
                                                         the opposite. The next is a Cruiser, which has no special ability. The final ship is the Zoomboat, which can move to an adjacent cell on
-                                                        a given player's turn, but also forfeits the player's opportunity to use a weapon during their turn.
+                                                        a given player's turn but also forfeits the player's opportunity to use a weapon during their turn.
                                                         <br>
                                                         <br>
-                                                        There are also three types of weapons. The first is the standard Missile (see first gif), which hits all non-submerged ships in the cell it drops into.
+                                                        There are also three types of weapons. The first is the standard Missile (see the first gif), which hits all non-submerged ships in the cell it drops into.
                                                         The second is the Torpedo, which is able to damage submerged submarines. The final is the Radar, which scans and reveals all enemy Zoomboats
-                                                        in a 5x5 area around the cell it was used on (see second gif).
+                                                        in a 5x5 area around the cell it was used on (see the second gif).
                                                     </p>
                                                 </div>
                                                 <div class="col-md-4 col-sm-12">
@@ -277,7 +278,7 @@
                                         </div>
                                     </div>
                                     <div class="modal-footer">
-                                        <a href="https://github.com/danwei002/Battleship-Project" class="effect2"><i class="fab fa-github fa-1x"></i> GitHub Repository</a>
+                                        <a href="https://github.com/danwei002/OOP-Simulation-Project" class="effect2"><i class="fab fa-github fa-1x"></i> GitHub Repository</a>
                                     </div>
                                 </div>
                             </div>
@@ -306,7 +307,7 @@
                                     <div class="modal-body">
                                         <div class="container-fluid">
                                             <div class="row">
-                                                <div class="col-md-8 col-sm-12">
+                                                <div class="col-md-8 col-sm-12 col-12">
                                                     <p class="lead" style="color: black; text-align: left; line-height: 150% !important;">
                                                         A game inspired by Nintendo's Mario Bros that I created as the final project for my Grade 11 Computer Science course.
                                                         The game is written in Java using the <a href="https://www.greenfoot.org/door" class="effect2">Greenfoot</a> IDE. It includes
@@ -320,7 +321,7 @@
                                                         Controls: left and right arrow keys to move, hold shift to sprint, spacebar to jump
                                                     </p>
                                                 </div>
-                                                <div class="col-md-4 col-sm-12">
+                                                <div class="col-md-4 col-sm-12 col-12">
                                                     <img src="images/platformerDemo.gif" style="width: 12vw; height: 16vw; border-width: 1%; border-color: #c3d3e6; border-style: solid;">
                                                 </div>
                                             </div>
@@ -335,8 +336,60 @@
                     </div>
                 </div>
                 <div class="row">
+                    <div class="col-12">
+                        <br>
+                        <br>
+                    </div>
+                </div>
+                <div class="row">
                     <div class="col-md-4 col-sm-6 col-12">
+                        <a type="button" id="simulationBtn" class="btn btnHoverAnim btn-info" data-toggle="modal" data-target="#simulationInfo">
+                            <div class="projButton">
+                                <img src="images/simulation.png">
+                                <div class="overlay">
+                                    <p class="overlayTxt" style="font-family: Roboto Sans Pro, sans-serif;">Battlefield Simulation</p>
+                                </div>
+                            </div>
+                        </a>
 
+                        <!-- Modal -->
+                        <div class="modal fade" id="simulationInfo" tabindex="-1" role="dialog" aria-hidden="false">
+                            <div class="modal-dialog modal-xl modal-dialog-centered modalAnimation" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" style="color:black;">Battlefield Simulation</h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <div class="container-fluid">
+                                            <div class="row">
+                                                <div class="col-md-8 col-sm-12">
+                                                    <p class="lead" style="color: black; text-align: left; line-height: 150% !important;">
+                                                        A <a href="https://clashroyale.com/" class="effect2">Clash Royale</a> inspired Battlefield simulation created
+                                                        for one of the group projects in my Grade 12 Computer Science courses. It is written in Java using the
+                                                        <a href="https://www.greenfoot.org/door" class="effect2">Greenfoot</a> IDE.
+                                                        <br>
+                                                        <br>
+                                                        This simulation is a tower-defense simulation. It simulates a battle between two teams, red and blue.
+                                                        Each team's objective is to destroy the enemy's Hub building. There are three types of buildings: Hubs, Defense Towers (fire
+                                                        at enemy troops), and Artilleries (fire at enemy buildings). There are four types of troops, Infantry (standard), Ninja (high speed and damage,
+                                                        low health), Tanks (low speed and damage, high health), and Medics (heals allied troops).
+                                                    </p>
+                                                </div>
+                                                <div class="col-md-4 col-sm-12">
+                                                    <img src="images/simulationDemo.gif" style="width: 18vw; height: 12vw; border-width: 1%; border-color: #c3d3e6; border-style: solid;">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <a href="https://github.com/danwei002/Battleship-Project" class="effect2"><i class="fab fa-github fa-1x"></i> GitHub Repository</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                     <div class="col-md-4 col-sm-6 col-12">
 

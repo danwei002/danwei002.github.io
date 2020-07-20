@@ -320,19 +320,24 @@ body {
     text-align: center;
 }
 
-#cardsBotBtn {
-    transition: .5s all;
-}
-
 #cardsBotInfo{}
 #battleshipInfo{}
 #platformerInfo{}
+#simulationInfo{}
+
+#cardsBotBtn {
+    transition: .5s all;
+}
 
 #battleshipBtn {
     transition: .5s all;
 }
 
 #platformerBtn {
+    transition: .5s all;
+}
+
+#simulationBtn {
     transition: .5s all;
 }
 
