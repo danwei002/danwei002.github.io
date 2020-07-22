@@ -50,7 +50,30 @@
                             <h3 style="font-family: Roboto Sans Pro, sans-serif; font-size: 14px; font-weight: 600; padding-bottom: 8%;"><i class="fas fa-map-marker-alt"></i>    Toronto, ON, Canada</h3>
 
                             <h3 style="font-family: Roboto Sans Pro, sans-serif; font-size: 18px; font-weight: 600; padding-bottom: 2%;">
-                                <i class="fab fa-linkedin-in" style="padding-right: 5%; padding-left: 3%;"></i><i class="fab fa-github" style="padding-right: 6%;"></i><i class="fab fa-discord"></i>
+                                <a class="btnHoverAnim" href="https://www.linkedin.com/in/danwei002/" style="padding-right: 5%; padding-left: 3%;"><i class="fab fa-linkedin-in"></i></a>
+                                <a class="btnHoverAnim" href="https://github.com/danwei002/" style="padding-right: 6%;"><i class="fab fa-github"></i></a>
+                                <a type="button" class="btnHoverAnim" data-toggle="modal" data-target="#discordUsername">
+                                    <div class="projButton">
+                                        <i class="fab fa-discord"></i>
+                                    </div>
+                                </a>
+
+                                <!-- Modal -->
+                                <div class="modal fade" id="discordUsername" tabindex="-1" role="dialog" aria-hidden="true">
+                                    <div class="modal-dialog modal-sm modalAnimation" role="document">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title" style="color:black;">Discord Username</h5>
+                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                    <span aria-hidden="true">&times;</span>
+                                                </button>
+                                            </div>
+                                            <div class="modal-body" style="text-align: center;">
+                                                FliX360#0793
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </h3>
                         </div>
                     </div>
@@ -62,7 +85,7 @@
                 </div>
                 <div class="row h-25">
                     <div class="col-sm-12" style="padding-top: 3%;">
-                        <a href="#about" id="goButton" class="btn btnHoverAnim btnGlow btn-primary btn-circle btn-xl" role="button"><i class="fas fa-angle-double-down fa-1x"></i></i></a>
+                        <a href="#about" id="goButton" class="btn btnHoverAnim btnGlow btn-primary btn-circle btn-xl" role="button"><i class="fas fa-angle-double-down fa-1x"></i></a>
                     </div>
                 </div>
             </div>
@@ -87,7 +110,7 @@
             </div>
 
             <section id="about1">
-                <div class="container-fluid h-100">
+                <div class="container-fluid h-100 overflow-auto">
                     <div class="row h-100">
                         <div class="col-md-6 col-sm-12 col-xs-12 col-12">
                             <h1>Born in 2002.<br> Raised in Canada.<br> Avid programmer since 2013.</h1>
@@ -113,7 +136,7 @@
 
             </section>
 
-            <section id="about2">
+            <section id="about2" class="overflow-auto">
                 <h1>Programming Languages</h1>
                 <br>
                 <div class="container-fluid">
@@ -144,7 +167,7 @@
                     </div>
                     <div class="row">
                         <div class="col-md-6 col-sm-12 col-xs-12 col-12">
-                            <h2><i class="fab fa-html5"></i></i> HTML</h2>
+                            <h2><i class="fab fa-html5"></i> HTML</h2>
                             <p class="lead">
                                 Might not be a programming language, but I'm going to
                                 put it here because where else would I put it? One of the two languages
@@ -380,7 +403,10 @@
                                                     </p>
                                                 </div>
                                                 <div class="col-md-4 col-sm-12 col-xs-12 col-12">
-                                                    <img src="images/simulationDemo.gif" class="img-fluid" style="border-width: 1%; border-color: #c3d3e6; border-style: solid;">
+                                                    <figure>
+                                                        <img src="images/simulationDemo.gif" class="img-fluid rounded figure-img" style="border-width: 1%; border-color: #c3d3e6; border-style: solid;">
+                                                        <figcaption class="figure-caption">A short gif of the simulation.</figcaption>
+                                                    </figure>
                                                 </div>
                                             </div>
                                         </div>
@@ -414,7 +440,10 @@
 
         </div>
 
-        <div id="contact" class="vh-100 text-light text-center"></div>
+        <div id="contact" class="vh-100 text-light text-center">
+            <h1 style="color: white;"><b>Contact Me</b></h1>
+
+        </div>
 
         <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
         <script src="https://code.jquery.com/jquery-1.10.2.js"></script>

@@ -26,6 +26,8 @@ body {
     font-size: 24px;
 }
 
+#discordUsername {}
+
 #goButton {
     transition: .5s all;
 }
@@ -129,18 +131,6 @@ body {
 }
 
 #about1 {}
-
-#about1 img {
-    float: left;
-    margin-left: 7.5%;
-    margin-right: 5%;
-    margin-top: 5%;
-    border-width: 0.4vw;
-    border-color: #403e4f;
-    border-style: solid;
-    width: 18vw;
-    height: 30vw;
-}
 
 #about1 h1 {
     color: #cde1fa;
@@ -392,7 +382,7 @@ body {
     100% { opacity: 1; transform: scale(1);}
 }
 
-#contact{
+#contact {
     padding-top: 5vh;
     position: relative;
     width = 100vw;
@@ -400,7 +390,14 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     background-origin: center;
-    background-image: url('../images/bk3.jpg');
+    background-image: url('../images/contact.jpg');
+}
+
+#contact h1 {
+    font: 48px Trebuchet MS, Helvetica, sans-serif;
+    padding: 30px;
+    text-align: center;
+    margin: 0 auto;
 }
 
 
