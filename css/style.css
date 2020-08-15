@@ -5,7 +5,7 @@ body {
     }
 }
 
-.fadeIn {
+.rev {
     animation: fadeIn ease 3s;
     -webkit-animation: fadeIn ease 3s;
     -moz-animation: fadeIn ease 3s;
@@ -14,31 +14,6 @@ body {
 
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
-}
-
-@keyframes fadeIn {
-    0% {opacity:0;}
-    100% {opacity:1;}
-}
-
-@-moz-keyframes fadeIn {
-    0% {opacity:0;}
-    100% {opacity:1;}
-}
-
-@-webkit-keyframes fadeIn {
-    0% {opacity:0;}
-    100% {opacity:1;}
-}
-
-@-o-keyframes fadeIn {
-    0% {opacity:0;}
-    100% {opacity:1;}
-}
-
-@-ms-keyframes fadeIn {
-    0% {opacity:0;}
-    100% {opacity:1;}
 }
 
 #navbar-scrollspy {}
@@ -436,17 +411,3 @@ body {
     background-color: rgba(0, 0, 0, 0.2);
     min-height: 15vh;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
