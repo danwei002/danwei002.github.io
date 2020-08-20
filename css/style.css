@@ -184,7 +184,7 @@ body {
 
 #about2 h2 {
     color: #cde1fa;
-    font: 36px Trebuchet MS, Helvetica, sans-serif;
+    font: 24px Trebuchet MS, Helvetica, sans-serif;
     text-align: center;
 }
 
@@ -194,17 +194,33 @@ body {
     margin-right: 5%;
     color: #cde1fa;
     font-size: 18px;
-    text-align: center;
 }
 
 #button2 {
     transition: .5s all;
 }
 
+#about2 a, a > span {
+    color: #7df1f5;
+    position: relative;
+    text-decoration: none;
+
+}
+
+#about2 a:before, a:after, a > span:before, a > span:after {
+    content: '';
+    position: absolute;
+    transition: transform .6s ease;
+}
+
 #about3 {}
 
 #button3 {
     transition: .5s all;
+}
+
+.btnGlow:hover {
+    box-shadow: 0 0 8px rgba(0, 0, 200, 0.6);
 }
 
 .btnHoverAnim {
@@ -227,23 +243,6 @@ body {
     -webkit-tap-highlight-color: transparent;
     transform: translateZ(0);
     box-shadow: 0 0 1px transparent;
-}
-
-.btnGlow:hover {
-    box-shadow: 0 0 8px rgba(0, 0, 200, 0.6);
-}
-
-#about2 a, a > span {
-    color: #7df1f5;
-    position: relative;
-    text-decoration: none;
-
-}
-
-#about2 a:before, a:after, a > span:before, a > span:after {
-    content: '';
-    position: absolute;
-    transition: transform .6s ease;
 }
 
 .effect1 {
@@ -415,4 +414,76 @@ body {
 #footer {
     background-color: rgba(0, 0, 0, 0.2);
     min-height: 15vh;
+}
+
+.skillbar {
+    position:relative;
+    display:block;
+    margin-bottom:40px;
+    width:100%;
+    background:#eee;
+    height:35px;
+    border-radius:3px;
+    -moz-border-radius:3px;
+    -webkit-border-radius:3px;
+    -webkit-transition:0.4s linear;
+    -moz-transition:0.4s linear;
+    -ms-transition:0.4s linear;
+    -o-transition:0.4s linear;
+    transition:0.4s linear;
+    -webkit-transition-property:width, background-color;
+    -moz-transition-property:width, background-color;
+    -ms-transition-property:width, background-color;
+    -o-transition-property:width, background-color;
+    transition-property:width, background-color;
+}
+
+.skillbar-title {
+    position:absolute;
+    top:0;
+    left:0;
+    font-size:13px;
+    color:#fff;
+    background:#6adcfa;
+    width: 75px;
+    -webkit-border-top-left-radius:3px;
+    -webkit-border-bottom-left-radius:4px;
+    -moz-border-radius-topleft:3px;
+    -moz-border-radius-bottomleft:3px;
+    border-top-left-radius:3px;
+    border-bottom-left-radius:3px;
+}
+
+.skillbar-title span {
+    display:block;
+    background:rgba(0, 0, 0, 0.1);
+    height:35px;
+    line-height:35px;
+    -webkit-border-top-left-radius:3px;
+    -webkit-border-bottom-left-radius:3px;
+    -moz-border-radius-topleft:3px;
+    -moz-border-radius-bottomleft:3px;
+    border-top-left-radius:3px;
+    border-bottom-left-radius:3px;
+}
+
+.skillbar-bar {
+    height:35px;
+    width:0px;
+    background:#6adcfa;
+    border-radius:3px;
+    -moz-border-radius:3px;
+    -webkit-border-radius:3px;
+}
+
+.skill-bar-percent {
+    position:absolute;
+    right:10px;
+    right:10px;
+    top:0;
+    font-size:11px;
+    height:35px;
+    line-height:35px;
+    color:#000;
+
 }
