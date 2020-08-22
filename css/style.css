@@ -294,7 +294,7 @@ body {
 
 .overlayTxt {
     color: white;
-    font-size: 16px;
+    font-size: 0.83333vw;
     position: absolute;
     top: 50%;
     left: 50%;
