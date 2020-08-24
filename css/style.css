@@ -20,11 +20,27 @@ body {
 }
 
 #home h1 {
-    font-size: 72px;
+    opacity: 0;
+    font-family: Roboto, sans-serif;
+    font-size: 4rem;
+    font-weight: 600;
 }
 
 #home h2 {
-    font-size: 24px;
+    opacity: 0;
+    font-family: Roboto Sans Pro, sans-serif;
+    font-size: 2rem;
+    font-weight: 600;
+    padding-bottom: 6%;
+    animation-delay: 1s;
+}
+
+#home h3 {
+    opacity: 0;
+    font-family: Roboto Sans Pro, sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+    padding-bottom: 2%;
 }
 
 #discord-username {}
@@ -86,7 +102,7 @@ body {
 }
 
 #about h1 {
-    font: 48px Trebuchet MS, Helvetica, sans-serif;
+    font: 3rem Trebuchet MS, Helvetica, sans-serif;
     padding-top: 30px;
     padding-bottom: 30px;
     text-align: center;
@@ -94,36 +110,16 @@ body {
 }
 
 #about h2 {
-    font-size: 24px;
+    font-size: 1.5rem;
     padding: 12px;
     text-align: center;
-}
-
-@keyframes anim {
-    0% {opacity: 0;}
-    100% {opacity: 1;}
-}
-
-@keyframes revAnim {
-    0% {opacity: 1;}
-    100% {opacity: 0;}
-}
-
-.animate {
-    -webkit-animation: anim 3s forwards;
-    animation: anim 3s forwards;
-}
-
-.revAnimate {
-    -webkit-animation: revAnim 1s forwards;
-    animation: revAnim 1s forwards;
 }
 
 #about1 {}
 
 #about1 h1 {
     color: #cde1fa;
-    font: 36px Trebuchet MS, Helvetica, sans-serif;
+    font: 2rem Trebuchet MS, Helvetica, sans-serif;
     text-align: left;
     margin-top: 3%;
     margin-right: 15%;
@@ -142,8 +138,8 @@ body {
     color: #7df1f5;
     position: relative;
     text-decoration: none;
-
 }
+
 #about1 a:before, a:after, a > span:before, a > span:after {
     content: '';
     position: absolute;
@@ -158,13 +154,13 @@ body {
 
 #about2 h1 {
     color: #cde1fa;
-    font: 48px Trebuchet MS, Helvetica, sans-serif;
+    font: 3rem Trebuchet MS, Helvetica, sans-serif;
     text-align: center;
 }
 
 #about2 h2 {
     color: #cde1fa;
-    font: 24px Trebuchet MS, Helvetica, sans-serif;
+    font: 1.5rem Trebuchet MS, Helvetica, sans-serif;
     text-align: center;
 }
 
@@ -172,7 +168,7 @@ body {
     line-height: 150% !important;
     margin-left: 5%;
     color: #cde1fa;
-    font-size: 16px;
+    font-size: 1rem;
 }
 
 #button2 {
@@ -264,7 +260,7 @@ body {
 }
 
 #projects h1 {
-    font: 48px Trebuchet MS, Helvetica, sans-serif;
+    font: 3rem Trebuchet MS, Helvetica, sans-serif;
     padding: 30px;
     text-align: center;
     margin: 0 auto;
@@ -400,7 +396,7 @@ body {
 }
 
 #contact h1 {
-    font: 48px Trebuchet MS, Helvetica, sans-serif;
+    font: 3rem Trebuchet MS, Helvetica, sans-serif;
     padding: 30px;
     text-align: center;
     margin: 0 auto;
@@ -441,7 +437,7 @@ body {
     position:absolute;
     top:0;
     left:0;
-    font-size:13px;
+    font-size:0.875rem;
     color:#fff;
     background:#6adcfa;
     width: 75px;
@@ -480,7 +476,7 @@ body {
     right:10px;
     right:10px;
     top:0;
-    font-size:11px;
+    font-size:0.6rem;
     height:35px;
     line-height:35px;
     color:#000;
