@@ -87,10 +87,6 @@ body {
     background-image: url('../images/about.jpg');
 }
 
-#about button {
-    width=1%;
-}
-
 #about section {
     position: absolute;
     left: 10%;
@@ -169,6 +165,10 @@ body {
     margin-left: 5%;
     color: #cde1fa;
     font-size: 1rem;
+}
+
+.smaller-text {
+    font-size: 0.875rem !important;
 }
 
 #button2 {
@@ -252,7 +252,6 @@ body {
 #projects {
     padding-top: 5vh;
     position: relative;
-    height: 100vh;
     background-size: cover;
     background-repeat: no-repeat;
     background-origin: center;
@@ -288,15 +287,18 @@ body {
 }
 
 .overlayTxt {
+    display: inline-flex;
+    align-items: center;
+    font-family: Roboto Sans Pro, sans-serif;
     color: white;
-    font-size: 0.83333vw;
-    position: absolute;
+    font-size: max(1vw, 1vh);
     top: 50%;
     left: 50%;
     -webkit-transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
-    text-align: center;
+    justify-content: center;
+    overflow-wrap: break-word;
 }
 
 #cardsBotInfo{}
@@ -304,6 +306,8 @@ body {
 #platformerInfo{}
 #simulationInfo{}
 #unityPlatformerInfo{}
+
+.btn-responsive {}
 
 #cardsBotBtn {
     transition: .5s all;
@@ -480,5 +484,73 @@ body {
     height:35px;
     line-height:35px;
     color:#000;
-
 }
+
+/* End skills bar */
+
+/* Media queries for responsive design */
+
+/* Mobile devices */
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+    .btn-responsive {
+        width: 25vw;
+        height: 25vw;
+    }
+
+    #home h1 {font-size: 3rem;}
+    #home h2 {font-size: 1.5rem;}
+    #home h3 {font-size: 0.7rem;}
+
+    #about1 p {font-size: 0.75rem;}
+    #about2 h1 {font-size: 2rem;}
+    #about2 p {font-size: 0.875rem;}
+    .smaller-text {font-size: 0.65625rem !important;}
+}
+
+/* Tablets */
+@media only screen and (min-device-width : 481px) and (max-device-width : 768px) {
+    .btn-responsive {
+        width: 15vw;
+        height: 15vw;
+    }
+
+    #home h1 {
+        font-size: 3rem;
+    }
+
+    #home h2 {
+        font-size: 1.5rem;
+    }
+
+    #home h3 {
+        font-size: 0.7rem;
+    }
+}
+
+/* Small screens/laptops */
+@media only screen and (min-device-width : 769px) and (max-device-width : 1024px) {
+    .btn-responsive {
+        width: 15vw;
+        height: 15vw;
+    }
+}
+
+/* Desktops */
+@media only screen and (min-device-width : 1025px) and (max-device-width : 1200px) {
+    .btn-responsive {
+        width: 10vw;
+        height: 10vw;
+    }
+}
+
+/* Large screens */
+@media only screen and (min-device-width : 1201px) {
+    .btn-responsive {
+        width: 10vw;
+        height: 10vw;
+    }
+}
+
+
+
+
