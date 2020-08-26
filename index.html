@@ -707,45 +707,26 @@
                     </div>
                 </div>
             </div>
-
         </footer>
-
         <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
         <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
         <script>
-            $(document).ready(function() {
-                var abt = $('#about');
-                var abt1 = $('#about1');
-                var abt2 = $('#about2');
+            /*$(document).ready(function() {
+                function aboutResize() {
+                    var abt = $('#about');
+                    var abt1 = $('#about1');
+                    var abt2 = $('#about2');
 
-                var largerHeight = Math.max(abt1.height(), abt2.height());
-                console.log(abt.offset().top);
-                if (abt.offset().top + abt.height() < Math.max(abt1.offset().top + abt1.height(), abt2.offset().top + abt2.height())) {
-                    var topOffset = abt1.height() - abt.height();
-                    var excessHeight = largerHeight - abt.height();
-                    var newHeight = excessHeight + abt.height() + topOffset;
-                    abt.height(newHeight);
-                } else {
-                    abt.css('height', '100vh');
+                    var bottomAbt = abt.position().top + abt.outerHeight(true);
+                    var bottomAbt1 = abt1.position().top + abt1.outerHeight(true);
+                    var bottomAbt2 = abt2.position().top + abt2.outerHeight(true);
+
+                    var newHeight = abt.outerHeight(true) + Math.max(bottomAbt1, bottomAbt2) - abt.outerHeight(true);
+                    abt.outerHeight(newHeight);
                 }
-            });
-
-            $(window).resize(function() {
-                var abt = $('#about');
-                var abt1 = $('#about1');
-                var abt2 = $('#about2');
-
-                var largerHeight = Math.max(abt1.height(), abt2.height());
-                console.log(abt.offset().top);
-                if (abt.offset().top + abt.height() < Math.max(abt1.offset().top + abt1.height(), abt2.offset().top + abt2.height())) {
-                    var topOffset = abt1.height() - abt.height();
-                    var excessHeight = largerHeight - abt.height();
-                    var newHeight = excessHeight + abt.height() + topOffset;
-                    abt.height(newHeight);
-                } else {
-                    abt.css('height', '100vh');
-                }
-            });
+                aboutResize();
+                setInterval(aboutResize, 1);
+            });*/
 
             // Called on scroll
             $(window).scroll(function() {
