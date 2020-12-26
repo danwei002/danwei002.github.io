@@ -42,8 +42,6 @@ body {
     padding-bottom: 2%;
 }
 
-#discord-username {}
-
 #go-button {
     transition: .5s all;
 }
@@ -301,10 +299,11 @@ body {
 #simulation-info{}
 #unity-platformer-info{}
 #comp-programming-info{}
+#stick-hero-six-info{}
 
 .btn-responsive {}
 
-#cards-bot-btn, #battleship-btn, #platformer-btn, #simulation-btn, #unity-platformer-btn, #comp-programming-btn {transition: .5s all;}
+#cards-bot-btn, #battleship-btn, #platformer-btn, #simulation-btn, #unity-platformer-btn, #comp-programming-btn, #stick-hero-six-btn {transition: .5s all;}
 
 .link-highlight-2 {
     padding-top: 10px;

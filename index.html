@@ -8,7 +8,6 @@
         <link rel="stylesheet" href="css/bootstrap-grid.min.css" type="text/css">
         <link rel="stylesheet" href="css/bootstrap-reboot.min.css" type="text/css">
         <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css'>
-        <link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
         <link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
         <link rel="icon" type="image/png" href="images/icons/favicon.ico"/>
         <link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
@@ -65,27 +64,8 @@
                             <h4 class="animate__animated animate__fadeInUp animate__delay-3s animate__slow" style="padding-top: 8%; font-size: 1.2em;">
                                 <a class="btn-hover-anim" href="https://www.linkedin.com/in/danwei002/" style="padding-right: 5%; padding-left: 3%;"><i class="fab fa-linkedin-in"></i></a>
                                 <a class="btn-hover-anim" href="https://github.com/danwei002/" style="padding-right: 6%;"><i class="fab fa-github"></i></a>
-                                <a class="btn-hover-anim" data-toggle="modal" data-target="#discord-username">
-                                    <div class="proj-button">
-                                        <i class="fab fa-discord"></i>
-                                    </div>
-                                </a>
+                                <a class="btn-hover-anim" href="https://github.com/danwei002/"><i class="fas fa-file-alt"></i></a>
                             </h4>
-                            <div class="modal fade" id="discord-username" tabindex="-1" role="dialog" aria-hidden="true">
-                                <div class="modal-dialog modal-sm modal-animation" role="document">
-                                    <div class="modal-content">
-                                        <div class="modal-header">
-                                            <h5 class="modal-title" style="color:black;">Discord</h5>
-                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                                <span aria-hidden="true">&times;</span>
-                                            </button>
-                                        </div>
-                                        <div class="modal-body" style="text-align: center;">
-                                            FliX360#0793
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
                         </div>
                     </div>
                     <div class="col-md-4 col-sm-5 col-5 d-flex justify-content-center">
@@ -294,11 +274,12 @@
                                                         is stored and accessed using a MySQL database.
                                                         <br>
                                                         <br>
-                                                        The bot currently supports Texas Hold 'Em and President. It also includes a betting system as well as a basic
+                                                        The bot currently supports Texas Hold 'Em and President. It is able to run multiple
+                                                        games at once across different channels and servers. It also includes a betting system as well as a basic
                                                         economy system to go with it. The prefix for this bot is 'c!'.
                                                         <br>
                                                         <br>
-                                                        Some examples of commands (full list available under command 'c!help'):
+                                                        Some examples of commands:
                                                         <br>
                                                     </p>
                                                     <ul class="lead" style="color: black; text-align: left; line-height: 150% !important;">
@@ -326,6 +307,178 @@
                                     </div>
                                     <div class="modal-footer">
                                         <a href="https://github.com/danwei002/Cards-Bot" class="link-highlight-2"><i class="fab fa-github fa-1x"></i> GitHub Repository</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-sm-6 col-md-4 mb-5">
+                        <button type="button" id="stick-hero-six-btn" class="btn btn-responsive btn-hover-anim btn-info" data-toggle="modal" data-target="#stick-hero-six-info">
+                            <span class="proj-button">
+                                <img class="img-fluid" src="images/stickHero6.png">
+                                <span class="overlay overlay-txt">
+                                    Stick Hero 6
+                                </span>
+                            </span>
+                        </button>
+
+                        <!-- Modal -->
+                        <div class="modal fade" id="stick-hero-six-info" tabindex="-1" role="dialog" aria-hidden="false">
+                            <div class="modal-dialog modal-xl modal-dialog-centered modal-animation" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" style="color:black;">Stick Hero 6</h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <div class="container-fluid">
+                                            <div class="row">
+                                                <div class="col-lg-8 col-md-12 col-sm-12 col-xs-12 col-12">
+                                                    <p class="lead" style="color: black; text-align: left; line-height: 150% !important;">
+                                                        A project four of my SE classmates and I created over the course of our 1A Term. As per its name, Stick Hero 6,
+                                                        this project is a robot that plays the mobile game <a href="https://apps.apple.com/us/app/stick-hero/id918338898" class="link-highlight-2">Stick Hero</a>.
+                                                        <br>
+                                                        <br>
+                                                        The robot is powered by a Raspberry Pi Zero W. To interact with the game running on a mobile phone, it is equipped with a
+                                                        camera and an arm (which is a combination of a servo motor and a stylus). The camera takes pictures of the phone screen, which are processed and analyzed
+                                                        by some Python scripts we wrote. This allows the robot to determine the duration it should press down on the screen for to cross the gap.
+                                                        <br>
+                                                        <br>
+                                                        The main Python libraries used in the project are: <a href="https://numpy.org/doc/stable/reference/index.html" class="link-highlight-2">NumPy</a> and
+                                                        <a href="https://pillow.readthedocs.io/en/stable/" class="link-highlight-2">Pillow</a> for image processing,
+                                                        <a href="https://picamera.readthedocs.io/en/release-1.13/" class="link-highlight-2">PiCamera</a> for interacting with the camera, and
+                                                        <a href="https://gpiozero.readthedocs.io/en/stable/api_output.html" class="link-highlight-2">GPIOzero</a> for servo motor control.
+                                                    </p>
+                                                </div>
+                                                <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12 col-12">
+                                                    <figure>
+                                                        <img src="images/StickHero6Demo2.gif" class="img-fluid rounded figure-img" style="border-width: 1%; border-color: #c3d3e6; border-style: solid;">
+                                                        <figcaption class="figure-caption">Stick Hero 6</figcaption>
+                                                    </figure>
+                                                    <figure>
+                                                        <img src="images/StickHero6Demo1.gif" class="img-fluid rounded figure-img" style="border-width: 1%; border-color: #c3d3e6; border-style: solid;">
+                                                        <figcaption class="figure-caption">A close-up</figcaption>
+                                                    </figure>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-sm-6 col-md-4 mb-5">
+                        <button type="button" id="unity-platformer-btn" class="btn btn-responsive btn-hover-anim btn-info" data-toggle="modal" data-target="#unity-platformer-info">
+                            <span class="proj-button">
+                                <img class="img-fluid" src="images/unityPlatformer.png" style="height: 100%;">
+                                <span class="overlay overlay-txt">
+                                    3D Parkour Platformer (in development)
+                                </span>
+                            </span>
+                        </button>
+
+                        <!-- Modal -->
+                        <div class="modal fade" id="unity-platformer-info" tabindex="-1" role="dialog" aria-hidden="false">
+                            <div class="modal-dialog modal-xl modal-dialog-centered modal-animation" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" style="color:black;">3D Parkour Platformer</h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <div class="container-fluid">
+                                            <div class="row">
+                                                <div class="col-lg-8 col-md-12 col-sm-12 col-xs-12 col-12">
+                                                    <p class="lead" style="color: black; text-align: left; line-height: 150% !important;">
+                                                        A 3D Platformer/First-Person Shooter hybrid game that I am currently developing with two friends of mine.
+                                                        One of them has a <a class="link-highlight-2" href="https://govindn75.github.io/">portfolio</a> too, check it out!
+                                                        It is being developed using the Unity Engine, with all scripts being written in C#.
+                                                        <br>
+                                                        <br>
+                                                        The objective of the game, like most other platformer games, is to navigate your way through numerous levels. The player is equippied with a hitscan rifle
+                                                        that is used to shoot at certain targets/buttons/triggers that make things happen around the level, such as opening a door, or rotating a
+                                                        platform.
+                                                        <br>
+                                                        <br>
+                                                        The game's movement options include basic FPS movement mechanics, as well as wall-running, sliding down ramps, and a powerful knockback pistol that pushes players in the opposite
+                                                        direction that it was fired in.
+                                                    </p>
+                                                </div>
+                                                <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12 col-12">
+                                                    <figure>
+                                                        <img src="images/wallrunDemo.gif" class="img-fluid rounded figure-img" style="border-width: 1%; border-color: #c3d3e6; border-style: solid;">
+                                                        <figcaption class="figure-caption">Wall-running example</figcaption>
+                                                    </figure>
+                                                    <figure>
+                                                        <img src="images/kbPistolDemo.gif" class="img-fluid rounded figure-img" style="border-width: 1%; border-color: #c3d3e6; border-style: solid;">
+                                                        <figcaption class="figure-caption">Knockback-pistol example</figcaption>
+                                                    </figure>
+                                                    <figure>
+                                                        <img src="images/rampSlideDemo.gif" class="img-fluid rounded figure-img" style="border-width: 1%; border-color: #c3d3e6; border-style: solid;">
+                                                        <figcaption class="figure-caption">Ramp-sliding example</figcaption>
+                                                    </figure>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <a href="https://unity.com/" class="link-highlight-2"><i class="fab fa-unity fa-1x"></i> Made using Unity</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-sm-6 col-md-4 mb-5">
+                        <button type="button" id="simulation-btn" class="btn btn-responsive btn-hover-anim btn-info" data-toggle="modal" data-target="#simulation-info">
+                            <span class="proj-button">
+                                <img class="img-fluid" src="images/simulation.png">
+                                <span class="overlay overlay-txt">
+                                    Battlefield Simulation
+                                </span>
+                            </span>
+                        </button>
+
+                        <!-- Modal -->
+                        <div class="modal fade" id="simulation-info" tabindex="-1" role="dialog" aria-hidden="false">
+                            <div class="modal-dialog modal-xl modal-dialog-centered modal-animation" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" style="color:black;">Battlefield Simulation</h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <div class="container-fluid">
+                                            <div class="row">
+                                                <div class="col-lg-8 col-md-12 col-sm-12 col-xs-12 col-12">
+                                                    <p class="lead" style="color: black; text-align: left; line-height: 150% !important;">
+                                                        A <a href="https://clashroyale.com/" class="link-highlight-2">Clash Royale</a> inspired Battlefield simulation created
+                                                        for one of the group projects in my Grade 12 Computer Science courses. It is written in Java using the
+                                                        <a href="https://www.greenfoot.org/door" class="link-highlight-2">Greenfoot</a> IDE.
+                                                        <br>
+                                                        <br>
+                                                        This simulation is a tower-defense simulation. It simulates a battle between two teams, red and blue.
+                                                        Each team's objective is to destroy the enemy's Hub building. There are three types of buildings: Hubs, Defense Towers (fire
+                                                        at enemy troops), and Artilleries (fire at enemy buildings). There are four types of troops, Infantry (standard), Ninja (high speed and damage,
+                                                        low health), Tanks (low speed and damage, high health), and Medics (heals allied troops).
+                                                    </p>
+                                                </div>
+                                                <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12 col-12">
+                                                    <figure>
+                                                        <img src="images/simulationDemo.gif" class="img-fluid rounded figure-img" style="border-width: 1%; border-color: #c3d3e6; border-style: solid;">
+                                                        <figcaption class="figure-caption">A short gif of the simulation.</figcaption>
+                                                    </figure>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <a href="https://github.com/danwei002/OOP-Simulation-Project" class="link-highlight-2"><i class="fab fa-github fa-1x"></i> GitHub Repository</a>
                                     </div>
                                 </div>
                             </div>
@@ -452,122 +605,16 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-6 col-sm-6 col-md-4 mb-5">
-                        <button type="button" id="simulation-btn" class="btn btn-responsive btn-hover-anim btn-info" data-toggle="modal" data-target="#simulation-info">
-                            <span class="proj-button">
-                                <img class="img-fluid" src="images/simulation.png">
-                                <span class="overlay overlay-txt">
-                                    Battlefield Simulation
-                                </span>
-                            </span>
-                        </button>
+                </div>
 
-                        <!-- Modal -->
-                        <div class="modal fade" id="simulation-info" tabindex="-1" role="dialog" aria-hidden="false">
-                            <div class="modal-dialog modal-xl modal-dialog-centered modal-animation" role="document">
-                                <div class="modal-content">
-                                    <div class="modal-header">
-                                        <h5 class="modal-title" style="color:black;">Battlefield Simulation</h5>
-                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                            <span aria-hidden="true">&times;</span>
-                                        </button>
-                                    </div>
-                                    <div class="modal-body">
-                                        <div class="container-fluid">
-                                            <div class="row">
-                                                <div class="col-lg-8 col-md-12 col-sm-12 col-xs-12 col-12">
-                                                    <p class="lead" style="color: black; text-align: left; line-height: 150% !important;">
-                                                        A <a href="https://clashroyale.com/" class="link-highlight-2">Clash Royale</a> inspired Battlefield simulation created
-                                                        for one of the group projects in my Grade 12 Computer Science courses. It is written in Java using the
-                                                        <a href="https://www.greenfoot.org/door" class="link-highlight-2">Greenfoot</a> IDE.
-                                                        <br>
-                                                        <br>
-                                                        This simulation is a tower-defense simulation. It simulates a battle between two teams, red and blue.
-                                                        Each team's objective is to destroy the enemy's Hub building. There are three types of buildings: Hubs, Defense Towers (fire
-                                                        at enemy troops), and Artilleries (fire at enemy buildings). There are four types of troops, Infantry (standard), Ninja (high speed and damage,
-                                                        low health), Tanks (low speed and damage, high health), and Medics (heals allied troops).
-                                                    </p>
-                                                </div>
-                                                <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12 col-12">
-                                                    <figure>
-                                                        <img src="images/simulationDemo.gif" class="img-fluid rounded figure-img" style="border-width: 1%; border-color: #c3d3e6; border-style: solid;">
-                                                        <figcaption class="figure-caption">A short gif of the simulation.</figcaption>
-                                                    </figure>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="modal-footer">
-                                        <a href="https://github.com/danwei002/OOP-Simulation-Project" class="link-highlight-2"><i class="fab fa-github fa-1x"></i> GitHub Repository</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-6 col-sm-6 col-md-4 mb-5">
-                        <button type="button" id="unity-platformer-btn" class="btn btn-responsive btn-hover-anim btn-info" data-toggle="modal" data-target="#unity-platformer-info">
-                            <span class="proj-button">
-                                <img class="img-fluid" src="images/unityPlatformer.png" style="height: 100%;">
-                                <span class="overlay overlay-txt">
-                                    3D Parkour Platformer (in development)
-                                </span>
-                            </span>
-                        </button>
+                <div class="row mb-3">
+                    <div class="col-6 col-sm-6 col-md-4">
 
-                        <!-- Modal -->
-                        <div class="modal fade" id="unity-platformer-info" tabindex="-1" role="dialog" aria-hidden="false">
-                            <div class="modal-dialog modal-xl modal-dialog-centered modal-animation" role="document">
-                                <div class="modal-content">
-                                    <div class="modal-header">
-                                        <h5 class="modal-title" style="color:black;">3D Parkour Platformer</h5>
-                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                            <span aria-hidden="true">&times;</span>
-                                        </button>
-                                    </div>
-                                    <div class="modal-body">
-                                        <div class="container-fluid">
-                                            <div class="row">
-                                                <div class="col-lg-8 col-md-12 col-sm-12 col-xs-12 col-12">
-                                                    <p class="lead" style="color: black; text-align: left; line-height: 150% !important;">
-                                                        A 3D Platformer/First-Person Shooter hybrid game that I am currently developing with two friends of mine.
-                                                        One of them has a <a class="link-highlight-2" href="https://govindn75.github.io/">portfolio</a> too, check it out!
-                                                        It is being developed using the Unity Engine, with all scripts being written in C#.
-                                                        <br>
-                                                        <br>
-                                                        The objective of the game, like most other platformer games, is to navigate your way through numerous levels. The player is equippied with a hitscan rifle
-                                                        that is used to shoot at certain targets/buttons/triggers that make things happen around the level, such as opening a door, or rotating a
-                                                        platform.
-                                                        <br>
-                                                        <br>
-                                                        The game's movement options include basic FPS movement mechanics, as well as wall-running, sliding down ramps, and a powerful knockback pistol that pushes players in the opposite
-                                                        direction that it was fired in.
-                                                    </p>
-                                                </div>
-                                                <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12 col-12">
-                                                    <figure>
-                                                        <img src="images/wallrunDemo.gif" class="img-fluid rounded figure-img" style="border-width: 1%; border-color: #c3d3e6; border-style: solid;">
-                                                        <figcaption class="figure-caption">Wall-running example</figcaption>
-                                                    </figure>
-                                                    <figure>
-                                                        <img src="images/kbPistolDemo.gif" class="img-fluid rounded figure-img" style="border-width: 1%; border-color: #c3d3e6; border-style: solid;">
-                                                        <figcaption class="figure-caption">Knockback-pistol example</figcaption>
-                                                    </figure>
-                                                    <figure>
-                                                        <img src="images/rampSlideDemo.gif" class="img-fluid rounded figure-img" style="border-width: 1%; border-color: #c3d3e6; border-style: solid;">
-                                                        <figcaption class="figure-caption">Ramp-sliding example</figcaption>
-                                                    </figure>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="modal-footer">
-                                        <a href="https://unity.com/" class="link-highlight-2"><i class="fab fa-unity fa-1x"></i> Made using Unity</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
                     </div>
-                    <div class="col-6 col-sm-6 col-md-4 mb-5">
+                </div>
+
+                <div class="row">
+                    <div class="col-6 col-sm-6 col-md-4">
                         <button type="button" id="comp-programming-btn" class="btn btn-responsive btn-hover-anim btn-info" data-toggle="modal" data-target="#comp-programming-info">
                             <span class="proj-button">
                                 <img class="img-fluid" src="images/graphTheory.jpg">
@@ -618,18 +665,6 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
-                </div>
-
-                <div class="row mb-3">
-
-                    <div class="col-6 col-sm-6 col-md-4">
-
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-6 col-sm-6 col-md-4">
-
                     </div>
                     <div class="col-6 col-sm-6 col-md-4">
 
