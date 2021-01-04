@@ -95,7 +95,7 @@
                     </div>
 
                     <div class="col-4 d-flex justify-content-center">
-                        <button id="button3" type="button" class="btn btn-hover-anim btn-glow btn-danger btn-circle btn-xl"><i class="fas fa-times"></i></button>
+                        <a id="button3" type="button" class="btn btn-hover-anim btn-glow btn-info btn-circle btn-xl" href="images/Resume.pdf"><i class="fas fa-file-alt"></i></a>
                     </div>
                 </div>
             </div>
@@ -613,13 +613,7 @@
                 </div>
 
                 <div class="row mb-3">
-                    <div class="col-6 col-sm-6 col-md-4">
-
-                    </div>
-                </div>
-
-                <div class="row">
-                    <div class="col-6 col-sm-6 col-md-4">
+                    <div class="col-6 col-sm-6 col-md-4 mb-5">
                         <button type="button" id="comp-programming-btn" class="btn btn-responsive btn-hover-anim btn-info" data-toggle="modal" data-target="#comp-programming-info">
                             <span class="proj-button">
                                 <img class="img-fluid" src="images/graphTheory.jpg">
@@ -671,10 +665,10 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-6 col-sm-6 col-md-4">
+                    <div class="col-6 col-sm-6 col-md-4 mb-5">
 
                     </div>
-                    <div class="col-6 col-sm-6 col-md-4">
+                    <div class="col-6 col-sm-6 col-md-4 mb-5">
 
                     </div>
                 </div>
@@ -813,7 +807,7 @@
                     var bottomAbt2 = abt2.position().top + abt2.outerHeight(true);
 
                     var newHeight = abt.outerHeight(true) + Math.max(bottomAbt1, bottomAbt2) - abt.outerHeight(true);
-                    abt.outerHeight(newHeight);
+                    abt.outerHeight(newHeight + $(window).height() / 15);
                 }
                 aboutResize();
                 setInterval(aboutResize, 1);
